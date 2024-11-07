@@ -1,0 +1,9 @@
+<h5>{{ server.name }}</h5>
+<p>Server status is {{ server.status }}</p>
+<button
+  class="btn btn-primary"
+  [routerLink]="['edit']"
+  queryParamsHandling="preserve"
+>
+  Edit Server
+</button>

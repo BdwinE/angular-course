@@ -1,0 +1,11 @@
+
+<div>
+    <button (click)="onToggle(); onClick()">Display Details</button>
+    <p *ngIf="toggle">Hello my name is WHAT!</p>
+    <div *ngIf="buttonClicks<5; else greaterThanFour">
+        {{buttonClicks}}
+    </div>
+    <ng-template #greaterThanFour>
+        <p [ngStyle]="{backgroundColor:'blue'}" [ngClass]="{online: true}">{{buttonClicks}}</p>
+    </ng-template>
+</div>

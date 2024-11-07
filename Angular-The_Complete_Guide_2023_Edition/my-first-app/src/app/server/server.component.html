@@ -1,0 +1,6 @@
+<h1>The server Component</h1>
+<input [(ngModel)]="username">
+
+<p>{{ username }}</p>
+
+<button [disabled]="!username" (click)="reset()"> Reset</button>
