@@ -1,3 +1,4 @@
 /node_modules/  # Ignore the entire node_modules directory
 /dist/          # Ignore dist folder
 /recipe-app
+/environments
